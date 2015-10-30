@@ -1,7 +1,7 @@
 var clock = document.querySelector("#utility-clock");
 utilityClock(clock);
 
-if(clock.parentNode.classList.contain('fill')) autoResize(clock,295+32);
+if(clock.parentNode.classList.contains('fill')) autoResize(clock,295+32);
 
 function utilityClock(container){
 	var dynamic = container.querySelector('.dynamic');
