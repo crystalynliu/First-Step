@@ -37,7 +37,7 @@ function utilityClock(container){
 	var position = function(element,phase,r){
 		var theta = phase*2*Math.PI;
 		element.style.top=(-r*Math.cos(theta)).toFixed(1)+'px';
-		element.style.left=(-r*Math.cos(theta)).toFixed(1)+'px';
+		element.style.left=(r*Math.cos(theta)).toFixed(1)+'px';
 	}
 	var rotate = function(element,second){
 		element.style.transform=element.style.webkitTransform='rotate('+(second*6)+'deg)';
