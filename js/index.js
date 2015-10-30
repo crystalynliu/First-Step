@@ -44,7 +44,7 @@ function utilityClock(container){
 	}
 	var animate=function(){
 		var now = new Date();
-		var time=now.getHours()*3600+now.getMinute()*60+now.getSeconds()*1+now.getMilliseconds()/1000;
+		var time=now.getHours()*3600+now.getMinutes()*60+now.getSeconds()*1+now.getMilliseconds()/1000;
 		rotate(secondElement,time);
 		rotate(minuteElement,time/60);
 		rotate(hourElement,time/60/12);
